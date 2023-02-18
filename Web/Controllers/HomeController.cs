@@ -21,9 +21,22 @@ namespace Web.Controllers
             return View(investimentos);
         }
 
-        public IActionResult Privacy()
+        //Usando QueryString - vamos tbm definir a estrutura da rota
+        [Route("/home/data/{data}")]
+        public IActionResult Data(string data)
         {
+            //armazenar a data em uma sessão
+            HttpContext.Session.SetString("DataAcesso", data);
             return View();
-        }       
+        }
+
+        [Route("/home/resultado")]
+        public IActionResult Resultado()
+        {
+            //Para recuperar o resultado da sessão
+
+            var dataEmSession = HttpContext.Session.GetString("DataAcesso");
+            return View("Resultado", dataEmSession);
+        }
     }
 }
