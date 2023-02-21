@@ -21,5 +21,10 @@ namespace Financeiro.Service.Services
         {
             return _dbContext.tipoInvestimento.ToList();
         }
+
+        public IList<TipoInvestimentos> GetAllSelected(List<int> selecionados)
+        {
+            return _dbContext.tipoInvestimento.Where(tipoInvestimento => selecionados.Contains(tipoInvestimento.Id)).ToList();
+        }
     }
 }

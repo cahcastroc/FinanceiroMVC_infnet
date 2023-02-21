@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{09328434-C963-42EF-8724-D83847F37DD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web", "Web\Web.csproj", "{09328434-C963-42EF-8724-D83847F37DD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Financeiro.Domain", "Financeiro.Domain\Financeiro.Domain.csproj", "{8F177770-74ED-42BD-A08B-3406A52FEA14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Financeiro.Domain", "Financeiro.Domain\Financeiro.Domain.csproj", "{8F177770-74ED-42BD-A08B-3406A52FEA14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Financeiro.Service", "Financeiro.Service\Financeiro.Service.csproj", "{44760A9B-80F3-4735-9EBA-8D4FCAEF33E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Financeiro.Service", "Financeiro.Service\Financeiro.Service.csproj", "{44760A9B-80F3-4735-9EBA-8D4FCAEF33E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

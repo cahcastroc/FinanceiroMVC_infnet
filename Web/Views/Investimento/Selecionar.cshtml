@@ -1,0 +1,26 @@
+﻿@model List<Financeiro.Domain.Entities.TipoInvestimentos>
+@{
+}
+<h2>Selecionados</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>Descrição</td>
+            <td>Status</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Descricao</td>
+                <td>@item.Active</td>
+            </tr>
+
+        }
+    </tbody>
+</table>

@@ -10,5 +10,6 @@ namespace Financeiro.Domain.Interfaces
     public interface ITipoInvestimentoService
     {
         IList<TipoInvestimentos> GetAll();
+        IList<TipoInvestimentos> GetAllSelected(List<int> selecionados);
     }
 }
