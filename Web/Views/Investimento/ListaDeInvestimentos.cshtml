@@ -14,7 +14,7 @@
         <tr>
             <td>#</td>
             <td>Descrição</td>
-            <td>Status</td>
+            
         </tr>
     </thead>
     <tbody>
@@ -22,9 +22,9 @@
         
         {
         <tr>
-            <td><input type ="checkbox" name="Selected" value="@item.Id"/></td>
+            <td><input type ="checkbox" name="Selected" value="@item.Id" checked="@item.Active"/></td>
             <td>@item.Descricao</td>
-            <td>@item.Active</td>
+            
         </tr>    
         
         }

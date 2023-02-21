@@ -22,6 +22,9 @@ builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 options.Cookie.Name = "Data");
 
+//Cache - Habilitar o uso
+builder.Services.AddMemoryCache();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
